@@ -1,4 +1,4 @@
-##### Run KOOMPI Site
+##### Run KOOMPI Store
 
 ```sh
 cd koompi-store
