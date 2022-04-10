@@ -4,9 +4,9 @@ import { StarIcon } from "@heroicons/react/solid";
 
 function index() {
   return (
-    <div className="flex flex-col w-full pl-16 pr-16 mt-4">
+    <div className="flex flex-col w-full">
       <section className=" flex flex-col w-full mr-8 border-b-2 h-44">
-        <div className="mt-6 flex justify-between w-full">
+        <div className="flex justify-between w-full">
           <div className="flex flex-row">
             <img
               src="https://www.citypng.com/public/uploads/small/31631799232q74jw0cko5c1uvgpelqzssgha5zfscvnjre0b6hslsfb9egnfnsqgwghla9bsd25hbxbey6rd4n3gjtdlurikyskupiincxhuqit.png"
@@ -40,8 +40,8 @@ function index() {
       </section>
 
       <section className="mt-8 flex">
-        <div className=" flex items-end justify-start w-full mr-4 h-96 rounded-md bg-[url('https://techcrunch.com/wp-content/uploads/2019/10/app-store-icon-1.jpg')]"></div>
-        <div className=" flex items-end justify-start w-full  h-96 rounded-md bg-[url('https://techcrunch.com/wp-content/uploads/2019/10/app-store-icon-1.jpg')]"></div>
+        <div className=" flex items-end justify-start w-full mr-4 h-80 rounded-md bg-[url('https://techcrunch.com/wp-content/uploads/2019/10/app-store-icon-1.jpg')]"></div>
+        <div className=" flex items-end justify-start w-full  h-80 rounded-md bg-[url('https://techcrunch.com/wp-content/uploads/2019/10/app-store-icon-1.jpg')]"></div>
       </section>
       <section className="mt-8 border-b-2 pb-8 w-5/6">
         <p>

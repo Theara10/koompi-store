@@ -2,20 +2,21 @@ import React from "react";
 import SidebarRow from "./SidebarRow";
 import { ExclamationCircleIcon } from "@heroicons/react/solid";
 import Link from "next/link";
+import Image from "next/image";
 
 function Sidebar() {
   return (
-    <div className="bg-gray-100 w-1/6 h-screen pt-6 fixed flex flex-col justify-between pb-8  ">
+    <div className="bg-lightgray-100 w-2/12 h-screen pt-6 fixed flex flex-col justify-between pb-8 dark:bg-navy_blue-800 ">
       <div>
-        <div className="flex ml-4 items-center rounded-sm bg-gray-200 p-1 w-4/5 justify-between">
+        <div className="flex justify-center bg-lightgray-300 dark:bg-navy_blue-700 py-1 mx-6 rounded-md items-center">
           <input
-            className="bg-transparent outline-none placeholder-gray-500 items-center w-3/4 ml-1"
-            type="text"
+            type="email"
+            name="email"
+            class=" p-1 w-2/3 bg-lightgray-300 dark:bg-navy_blue-700 outline-none shadow-sm border-none placeholder-lightgray-600 dark:placeholder-lightgray-100  rounded-md sm:text-sm "
             placeholder="Search"
           />
-
-          <img
-            src="https://i0.wp.com/www.thinkafrica.fi/wp-content/uploads/2019/04/search-icon.png?fit=1200%2C1200&ssl=1&w=640"
+          <Image
+            src={"/icons/search.png"}
             width="20"
             height="20"
             layout="fixed"
@@ -23,23 +24,12 @@ function Sidebar() {
         </div>
 
         <div className="mt-4">
-          <Link href="/">Home</Link>
-          <Link href="/category">category</Link>
-          <Link href="/detail">detail</Link>
-
-          <Link href="/about">about</Link>
-          <Link href="/update">upate</Link>
-
           <Link href="/about">
-            <SidebarRow
-              title="Explore"
-              icon="/icons/explore.png"
-              className="cursor-pointer"
-            />
+            <SidebarRow title="Explore" icon="/icons/explore.png" />
           </Link>
 
-          <SidebarRow title="KOOMPI Apps" icon="/icons/tool.png" />
-          <SidebarRow title="Education" icon="/education.png" />
+          <SidebarRow title="KOOMPI Apps" icon="/icons/logo.png" />
+          <SidebarRow title="Education" icon="/icons/education.png" />
           <Link href="/category">
             <SidebarRow title="Office" icon="/icons/office.png" />
           </Link>
@@ -53,10 +43,13 @@ function Sidebar() {
           <SidebarRow title="Updates" icon="/icons/update.png" />
         </div>
       </div>
+
       <Link href="/about">
-        <div className="flex items-center ml-6 cursor-pointer">
+        <div className="flex items-center ml-6 cursor-pointer ">
           <ExclamationCircleIcon className="h-6 text-pelorous-500" />
-          <p className="text-black-400 pl-2 font-medium">About</p>
+          <p className="text-black-400 dark:text-lightgray-100 pl-2 font-medium">
+            About
+          </p>
         </div>
       </Link>
     </div>
